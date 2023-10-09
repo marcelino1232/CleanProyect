@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CleanProyect.Application.Features.Streamers.Commands.CreateStreamer;
+using CleanProyect.Application.Features.Streamers.Commands.UpdateStreamer;
 using CleanProyect.Application.Features.Videos.Queries.GetVideosList;
 using CleanProyect.Domain;
 
@@ -11,6 +12,7 @@ namespace CleanProyect.Application.Mapping
         {
             CreateMap<Video, VideosVm>();
             CreateMap<CreateStreamerCommand, Streamer>();
+            CreateMap<UpdateStreamerCommand, Streamer>();
         }
     }
 }

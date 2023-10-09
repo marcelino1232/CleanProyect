@@ -21,6 +21,8 @@ namespace CleanProyect.Application.Contracts.Persistence
 
         Task<T> GetByIdAsync(int id);
 
+        Task<bool> Exist(Expression<Func<T, bool>> predicate = null);
+
         Task<T> AddAsync(T entity);
 
         Task<T> UpdateAsync(T entity);
